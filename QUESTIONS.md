@@ -15,9 +15,9 @@ Reference: [Introduction to Test Driven Development (TDD)](http://agiledata.org/
 Reference: [What Are Pure Functions And Why Use Them?](https://medium.com/@jamesjefferyuk/javascript-what-are-pure-functions-4d4d5392d49c)
 
 
-### When using `tape`, what's the difference between 'equal', 'deepEqual' and 'ok'?
+### When using `jest`, what's the difference between `toBe()` and `toEqual()`?
 
-Reference: [Tape - Guide](https://ci.testling.com/guide/tape)
+Reference: [Jest - Guide](https://jestjs.io/docs/en/getting-started)
 
 
 ### What do we call the process of testing small chunks of code?
@@ -27,7 +27,7 @@ Reference: [Unit Testing](https://en.wikipedia.org/wiki/Unit_testing)
 
 ### What are some other popular testing frameworks for Javascript and Node?
 
-Jasmine, Mocha, Jest, ...
+Jasmine, Mocha, Tape, ...
 Reference: [Comparing Jasmine, Mocha, AVA, Tape and Jest](https://raygun.com/blog/javascript-unit-testing-frameworks)
 
 

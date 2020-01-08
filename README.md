@@ -32,9 +32,9 @@ We can run `testDouble` to make sure that our `double` function is still returni
 
 ### Testing frameworks
 
-Testing like the example above won't get you very far, which is why we use frameworks to help us. We'll be using [Tape](https://github.com/substack/tape) on the course.
+Testing like the example above won't get you very far, which is why we use frameworks to help us. We'll be using [Jest](https://jestjs.io/) on the course.
 
-Frameworks give you "assertions" like `equal`, `deepEqual` and `ok` to check your values. They also let you easily describe what you're testing and what result was expected, which gives you good test outputs that can act as bug reports when something goes wrong.
+Frameworks give you "assertions" like `.toBe()` or `.toEqual()` to check your values. They also let you easily describe what you're testing and what result was expected, which gives you good test outputs that can act as bug reports when something goes wrong.
 
 ## What is Test-driven Development?
 
@@ -67,21 +67,22 @@ Think of tests as bug reports. What do you want a failing test to tell you?
 3. What did it do?
 4. What should it have done?
 
-A good template for writing tests with Tape would look something like this:
+A good template for writing tests with Jest would look something like this:
 
 ```js
 // Answer these questions for each unit test you write:
-test('What component aspect are you testing?', function(assert) {
-  const actual = 'What is the actual output?';
-  const expected = 'What is the expected output?';
+describe('What component or function are you testing?', function() {
+  it('should behave in a certain way', function() {
+    const actual = 'What is the actual output?';
+    const expected = 'What is the expected output?';
 
-  assert.equal(actual, expected, 'What should the feature do?');
-  assert.end();
+    expect(actual).toBe(expected);
+  });
 });
 ```
 
 ## Further reading
 
-+ [The Tape documentation](https://github.com/substack/tape)
++ [Jest documentation](https://jestjs.io/docs/en/getting-started)
 + [5 Questions Every Unit Test Must Answer](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d)
 + [TDD the RITE Way](https://medium.com/javascript-scene/tdd-the-rite-way-53c9b46f45e3)
